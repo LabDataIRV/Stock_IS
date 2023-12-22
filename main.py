@@ -8,19 +8,6 @@ from ui_ship import Ui_ShopWindow
 from ui_return import Ui_ReturnWindow
 from docx import Document
 
-# Make GUI
-# pyside2-designer
-# pyside2-uic stock_ui.ui -o ui_stock.py
-# pyside2-uic delivery_ui.ui -o ui_delivery.py
-# pyside2-uic ship_ui.ui -o ui_ship.py
-# pyside2-uic return_ui.ui -o ui_return.py
-# Transfer App
-# pip freeze > requirements.txt
-# Build App
-# pyinstaller --onefile --windowed main.py
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 # Main stock window
 class window(QtWidgets.QMainWindow):
