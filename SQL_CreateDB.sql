@@ -1,0 +1,34 @@
+CREATE TABLE "stock" (
+	"id"	INTEGER NOT NULL UNIQUE,
+	"material"	INTEGER NOT NULL,
+	"quantity"	INTEGER NOT NULL,
+	"price"	REAL NOT NULL,
+	"batch"	TEXT NOT NULL,
+	"provider"	INTEGER NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+CREATE TABLE "material" (
+	"id"	INTEGER NOT NULL UNIQUE,
+	"name_material"	TEXT NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+CREATE TABLE "provider" (
+	"id"	INTEGER NOT NULL UNIQUE,
+	"name_provider"	TEXT NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+CREATE TABLE "shops" (
+	"id"	INTEGER NOT NULL UNIQUE,
+	"number_shops"	TEXT NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+CREATE TABLE "operations_shops" (
+	"id"	INTEGER NOT NULL UNIQUE,
+	"number_shops"	INTEGER NOT NULL,
+	"material"	INTEGER NOT NULL,
+	"quantity"	INTEGER NOT NULL,
+	"price"	REAL NOT NULL,
+	"batch"	TEXT NOT NULL,
+	"operation"	NUMERIC NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
